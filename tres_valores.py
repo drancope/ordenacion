@@ -19,8 +19,8 @@ print(s)
 s = n
 for i in range(len(n)-1):   #Aquí hacemos el repaso a la lista dos veces
     for j in range(len(n)-1):
-        if s[i] > s[i+1]:
-            a = s[i]
-            s[i] = s[i+1]
-            s[i+1] = a
+        if s[j] > s[j+1]:
+            a = s[j]
+            s[j] = s[j+1]
+            s[j+1] = a
 print(s)
