@@ -1,7 +1,10 @@
 # Ordenación. Algoritmos básicos
 Repositorio para profundizar en python estudiando cómo ordenar una lista
+
 Autor: Yo mismo
+
 Fecha: Hoy
+
 Organización: IES José de Mora
 
 ## Algoritmos:
