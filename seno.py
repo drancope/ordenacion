@@ -13,8 +13,8 @@ def sendTelemetry(name, value):
 i=0
 while i < 1000:
 	
-	sendTelemetry("sin", math.sin(i))
-	sendTelemetry("cos", math.cos(i))
+	sendTelemetry("polinomio", 2*(i)**2-3*i+0.2*(i)**3)
+	#sendTelemetry("cos", math.cos(i))
 
 	i+=0.1
 	time.sleep(0.01)
