@@ -1,5 +1,5 @@
 ######
-# Archivo: Buuble-sort.py
+# Archivo: Buble-sort.py
 # Fecha: 14/04/2025
 # Lee un archivo txt y lo imprime ordenado
 ######

@@ -1,8 +1,8 @@
 ######
-# Archivo: Insercion-sort.py
+# Archivo: seleccion-sort.py
 # Fecha: 14/04/2025
 # Lee un archivo txt y lo imprime ordenado
-# por el metodo de inserción
+# por el método de selección
 ######
 
 n =[]
@@ -27,10 +27,11 @@ for linea in f:
 s = n
 print(s)
 for i in range(len(s)-1):
-    pared = s[i+1]
-    j = i
-    while (j>=0 and s[j]>pared):
-        s[j+1] = s[j]
-        j = j-1
-    s[j+1] = pared
-print(s)  
+    a = s[i]
+    for j in range(i+1, len(s)):
+        if a > s[j]:
+            a = s[j]        
+            aux = s[i]
+            s[i] = s[j]
+            s[j] = aux
+print(s)

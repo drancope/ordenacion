@@ -1,8 +1,8 @@
 ######
-# Archivo: Insercion-sort.py
+# Archivo: gnome-sort.py
 # Fecha: 14/04/2025
 # Lee un archivo txt y lo imprime ordenado
-# por el metodo de inserción
+# por el método gnome
 ######
 
 n =[]
@@ -29,8 +29,8 @@ print(s)
 for i in range(len(s)-1):
     pared = s[i+1]
     j = i
-    while (j>=0 and s[j]>pared):
-        s[j+1] = s[j]
+    while (j>=0):
+        if (s[j]>s[j+1]):
+            swap(j)
         j = j-1
-    s[j+1] = pared
 print(s)  
