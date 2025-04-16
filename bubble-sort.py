@@ -2,6 +2,7 @@
 # Archivo: Buble-sort.py
 # Fecha: 14/04/2025
 # Lee un archivo txt y lo imprime ordenado
+# comparando por datos contiguos
 ######
 
 n =[]
@@ -25,7 +26,11 @@ for linea in f:
 # Copiar n a s, ordenar.
 s = n
 for i in range(len(n)-1):   #Aquí hacemos el repaso a la lista dos veces
+    ordenar = 0
     for j in range(len(n)-1):
         if s[j] > s[j+1]:
             swap(j)
+            ordenar = 1
+        if ordenar == 0:
+            break
 print(s)
