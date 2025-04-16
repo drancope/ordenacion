@@ -8,10 +8,10 @@
 n =[]
 
 # funciones reutilizables
-def swap(i):
+def swap(i, j):
     a= n[i]
-    n[i] = n[i+1]
-    n[i+1] = a
+    n[i] = n[j]
+    n[j] = a
     
 def agregarNumero(linea):
     global n
@@ -31,7 +31,5 @@ for i in range(len(s)-1):
     for j in range(i+1, len(s)):
         if a > s[j]:
             a = s[j]        
-            aux = s[i]
-            s[i] = s[j]
-            s[j] = aux
+            swap(i,j)
 print(s)
